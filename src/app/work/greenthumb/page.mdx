@@ -1,0 +1,54 @@
+import logo from '@/images/clients/unseal/logomark-dark.svg'
+import imageHero from './hero.jpg'
+import imageEmilySelman from './emily-selman.jpg'
+
+export const caseStudy = {
+  client: 'GreenThumb',
+  title: 'Plant Computer Vision Application',
+  description:
+    'GreenThumb had us develop computer vision to provide agricultural insights through leaf area and bud area analysis.',
+  summary: [
+    'GreenThumb had us develop computer vision to provide agricultural insights through leaf area and bud area analysis.'
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2022-10',
+  service: 'Computer Vision Application Development',
+  testimonial: {
+    author: { name: 'Emily Selman', role: 'Head of Engineering at Unseal' },
+    content:
+      'Studio did an amazing job building out our core blockchain infrastructure and I’m sure once PlaceboCoin rallies they’ll be able to finish the project.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+{ caseStudy.summary }
+
+## What we did
+
+<TagList>
+  <TagListItem>Computer Vision development</TagListItem>
+  <TagListItem>Full Stack (Rails)</TagListItem>
+  <TagListItem>WebSocket</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: caseStudy.testimonial.author.name, role: 'Head of Engineering at Unseal' }}
+  image={{ src: imageEmilySelman }}
+>
+  Studio did an amazing job building out our core blockchain infrastructure and
+  I’m sure once PlaceboCoin rallies they’ll be able to finish the project.
+</Blockquote>
+
+<StatList>
+  <StatListItem value="34%" label="Fewer transactions" />
+  <StatListItem value="10%" label="Slower transactions" />
+  <StatListItem value="1000ms" label="Transaction latency" />
+  <StatListItem value="3" label="Active nodes" />
+</StatList>
